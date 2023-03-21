@@ -1,12 +1,16 @@
-<table>
+<table class="table">
   <thead>
-  <th>Nome: </th>
-  <th>Sobrenome: </th>
+  <th scope="col">Nome: </th>
+  <th scope="col">Sobrenome: </th>
   </thead>
   <tbody>
     <tr *ngFor = "let al of aluno">
-      <td> {{ al.nome }} </td>
-      <td> {{ al.sobrenome }} </td>
+      <td colspan="2"> {{ al.nome }} </td>
+      <td colspan="2"> {{ al.sobrenome }} </td>
+    </tr>
+    <tr *ngFor = "let al of aluno">
+      <td colspan="2"> {{ al.nome }} </td>
+      <td colspan="2"> {{ al.sobrenome }} </td>
     </tr>
   </tbody>
 </table>
